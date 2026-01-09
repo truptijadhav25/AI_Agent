@@ -1,0 +1,304 @@
+/* ======================================================
+   USERS PAGE – WHITE + MIX COLOR ADMIN THEME
+   PREMIUM ICON HOVER EFFECTS | RESPONSIVE
+====================================================== */
+
+.admin-users-section {
+  padding: 24px;
+  background: #f4f6fb;
+  border-radius: 16px;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* ================= HEADER ================= */
+
+.admin-header {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  align-items: end;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 280px;
+  padding: 14px 20px;
+  border-radius: 12px;
+  border: 1px solid #d0d7ff;
+  background: #ffffff;
+  color: #1f2937;
+  font-size: 14px;
+}
+
+.search-input::placeholder {
+  color: #6b7280;
+}
+
+/* ================= TABLE ================= */
+
+.users-table {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #e4e8ff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+/* ================= HEADER TITLE ================= */
+
+.table-header {
+  padding: 20px 28px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* ================= COLUMN HEADERS ================= */
+
+.table-columns {
+  display: grid;
+  grid-template-columns:
+    70px
+    160px
+    240px
+    110px
+    120px
+    130px
+    120px
+    100px
+    120px
+    240px;
+  padding: 16px 28px;
+  font-weight: 600;
+  font-size: 13px;
+  color: #374151;
+  background: #eef2ff;
+}
+
+/* ================= BODY ================= */
+
+.table-body {
+  max-height: 550px;
+  overflow-y: auto;
+}
+
+/* ================= ROWS ================= */
+
+.user-row {
+  display: grid;
+  grid-template-columns:
+    70px
+    160px
+    240px
+    110px
+    120px
+    130px
+    120px
+    100px
+    120px
+    240px;
+  padding: 16px 28px;
+  align-items: center;
+  font-size: 14px;
+  color: #111827;
+  border-bottom: 1px solid #eef2ff;
+}
+
+.user-row:hover {
+  background: #f5f7ff;
+}
+
+/* ================= CELLS ================= */
+
+.user-row > div {
+  min-width: 0;
+  white-space: nowrap;
+}
+
+.cell-name,
+.cell-email {
+  white-space: normal;
+  word-break: break-word;
+}
+
+/* ================= ROLE ================= */
+
+.cell-role {
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.cell-role.admin {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.cell-role.agent {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+/* ================= PLAN ================= */
+
+.cell-plan {
+  font-weight: 700;
+  color: #4f46e5;
+}
+
+/* ================= STATUS ================= */
+
+.cell-status.active {
+  color: #059669;
+  font-weight: 700;
+}
+
+.cell-status.paused {
+  color: #d97706;
+  font-weight: 700;
+}
+
+/* ================= ACTION ICONS ================= */
+
+.cell-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Base icon button */
+.cell-actions button {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background: #f1f5ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glow ring */
+.cell-actions button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.cell-actions button:hover::after {
+  opacity: 1;
+}
+
+/* Lift + glow */
+.cell-actions button:hover {
+  transform: translateY(-3px) scale(1.06);
+}
+
+/* ================= ICON TYPES ================= */
+
+.btn-edit {
+  color: #6366f1;
+}
+
+.btn-edit::after {
+  box-shadow: 0 0 0 6px rgba(99, 102, 241, 0.2);
+}
+
+.btn-edit:hover {
+  background: #6366f1;
+  color: #ffffff;
+}
+
+.btn-toggle {
+  color: #059669;
+}
+
+.btn-toggle::after {
+  box-shadow: 0 0 0 6px rgba(5, 150, 105, 0.25);
+}
+
+.btn-toggle:hover {
+  background: #059669;
+  color: #ffffff;
+}
+
+.btn-reset {
+  color: #2563eb;
+}
+
+.btn-reset::after {
+  box-shadow: 0 0 0 6px rgba(37, 99, 235, 0.25);
+}
+
+.btn-reset:hover {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.btn-delete {
+  color: #dc2626;
+}
+
+.btn-delete::after {
+  box-shadow: 0 0 0 6px rgba(220, 38, 38, 0.25);
+}
+
+.btn-delete:hover {
+  background: #dc2626;
+  color: #ffffff;
+}
+
+/* ================= PAGINATION ================= */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px;
+  background: #f5f7ff;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1200px) {
+  .table-columns,
+  .user-row {
+    grid-template-columns:
+      60px
+      140px
+      200px
+      100px
+      110px
+      120px
+      110px
+      90px
+      110px
+      220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .table-columns {
+    display: none;
+  }
+
+  .user-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 16px;
+  }
+
+  .cell-actions {
+    justify-content: flex-start;
+  }
+}
