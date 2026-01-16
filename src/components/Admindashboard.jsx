@@ -1,11 +1,11 @@
 // src/pages/dashboard/AdminDashboard.jsx - SIDEBAR FIXED ✅
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import Sidebar from "../../components/Sidebar";
-import Users from "../../components/users";
-import Bots from "../../components/Bots";
-import Performance from "../../components/Performance";
-import "../../styles/Dashboard.css";
+import Sidebar from "./Sidebar";
+import Users from "./users";
+import Bots from "./Bots";
+import Performance from "./Performance";
+import "../styles/Dashboard.css";
 
 const AdminDashboard = ({ roleOverride }) => {
   const location = useLocation();

@@ -1,4 +1,4 @@
-// src/pages/Landing.jsx - FIXED
+// src/pages/Landing.jsx
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/Landing.css";
@@ -7,7 +7,7 @@ const Landing = () => {
   const navigate = useNavigate();
 
   const goToChat = () => {
-    navigate("/chat");
+    navigate("/start-chat"); // ✅ CORRECT ROUTE
   };
 
   const goToLogin = () => {
@@ -30,9 +30,11 @@ const Landing = () => {
           <button className="btn-primary" onClick={goToChat}>
             Start Chat
           </button>
+
           <button className="btn-secondary" onClick={goToLogin}>
-            Admin Login
+            Login
           </button>
+
           <button className="btn-secondary" onClick={goToSignup}>
             Sign Up
           </button>
