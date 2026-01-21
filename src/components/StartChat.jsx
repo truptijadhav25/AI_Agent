@@ -21,7 +21,7 @@ function StartChat() {
 
           <button
             className="menu-item"
-            onClick={() => navigate("/dashboard")}
+            onClick={() => navigate("/")}
           >
             ➕ Create User
           </button>
@@ -35,7 +35,7 @@ function StartChat() {
 
           <button
             className="menu-item"
-            onClick={() => navigate("/dashboard")}
+            onClick={() => navigate("/")}
           >
             📋 License
           </button>
